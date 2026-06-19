@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href ="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+     
+    <style>
+      
+        
+       :root{
+        --blue: #02B6CF;
+        --green:#5CB75D;
+       }
+        *{
+        font-family: 'Roboto', sans-serif;
+        }
+        body{
+            
+        }
+        a{ text-decoration:none;
+        color: rgb(85, 84, 84);
+   font-weight:550;
+}
+
+        a:hover{
+            color: black;
+        }
+        ul{
+           
+           display:flex;
+             align-items:center;
+           list-style:none;
+           gap: 28px;
+           font-size:12px;
+/* justify-content: flex-end; */
+
+        }
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    /* border-bottom: 1px solid rgb(186, 186, 186); */
+}
+h1{
+  
+  
+    font-weight:500;
+    
+}
+span{
+    font-weight: bold;
+}
+.head{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.info{
+    width:545px;
+     margin: 0 auto;        /* centers the block */
+    text-align: center;    /* centers the text */
+    font-size: 18px;
+    font-weight: 150;
+    color: #949393;
+    line-height: 1.4;
+}
+.min1{
+    font-size: 22px;
+    font-weight:500;
+}
+.min{
+    position:relative;
+    top: 35px;
+     display:flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size:15px;
+}
+.blue-box{
+ width:350px;
+    height:35px;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+        text-align: center;
+    border-radius:12px;
+    color:white;
+    font-size: 18px;
+    padding: 20px;
+text-align:center;
+  margin: 30px auto; 
+    background-color: var(--blue);
+}
+button{
+          border:none; 
+   
+}
+button:hover{
+    background-color: white;
+    color: var(--blue);
+}
+.lvl1{
+   
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    background-color: rgb(255, 255, 255);
+    margin:88px;
+}
+.lvl2{
+     border-radius: 10px;
+    background-color:#F9F9F9;
+    color: black;
+}
+.lang{
+    text-align:center;
+    font-size:18px;
+    font-weight:600;
+}
+.boxes{
+    margin: 20px auto;
+    /* width:350px;
+    height:35px; */
+
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    gap:20px;
+     
+}
+.box1{
+   text-align: center;
+    border-radius:12px;
+    color:white;
+    font-size: 14px;
+    padding: 10px;
+text-align:center;
+  margin: 30px 0; 
+    background-color: var(--blue);
+}
+.box2{
+       text-align: center;
+    border-radius:12px;
+    color:white;
+    font-size: 14px;
+    padding: 10px;
+text-align:center;
+  margin: 30px 0; 
+    background-color: var(--green);
+}
+.smallinfo{
+    text-align:center;
+    font-size:12px;
+      font-weight:500;
+}
+.box1:hover{
+    background-color: #F9F9F9;
+}
+.box2:hover{
+    background-color: #F9F9F9;
+    color: var(--green)
+}
+/* .footer{
+    background-color: rgba(26, 25, 25, 0.993);
+    color: rgb(228, 227, 227);
+    display: flex;
+border-radius: 18px;
+    justify-content: center;
+} */
+.col>a{
+    color: rgb(217, 217, 217);
+}
+.col>a:hover{
+    color: rgb(149, 149, 149);
+}
+/*  */
+footer{
+    background:#1f1f1f;
+    color:white;
+    border-radius:20px;
+    padding:20px;
+    margin-top:20px;
+}
+
+.footer{
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+}
+
+.about{
+    width:350px;
+}
+
+.about p{
+    line-height:1.8;
+    color:#d4d4d4;
+}
+
+.col{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.col h3{
+    margin-bottom:12px;
+}
+
+.col a{
+    color:#d4d4d4;
+    text-decoration:none;
+}
+
+.col a:hover{
+    color:white;
+}
+
+.newsletter{
+    margin-top:8px;
+}
+
+.signup{
+    display:flex;
+    margin-top:10px;
+}
+
+.signup input{
+    width:280px;
+    padding:15px;
+    border:none;
+    background:#353535;
+    color:white;
+    border-radius:8px 0 0 8px;
+}
+
+.signup button{
+    background:#f6cf3e;
+    color:black;
+    padding:15px 25px;
+    border:none;
+    border-radius:0 8px 8px 0;
+    cursor:pointer;
+}
+
+.copyright{
+    text-align:right;
+    margin-top:1px;
+    color:#d4d4d4;
+}
+  @media screen and (max-width:600px){
+            
+.lvl1{
+   
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    gap:20px;
+    background-color: rgb(255, 255, 255);
+    margin:20px;
+}
+
+    .footer{
+        flex-direction:column;
+    }
+
+    .about{
+        max-width:100%;
+    }
+
+    .signup{
+        flex-direction:column;
+    }
+
+    .signup input{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    .signup button{
+        width:100%;
+    }
+}
+  }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+       
+            <img src="screenshot 2026-06-19 143212.png" width="200px">
+      
+            <ul>
+                <li><a href> Products  <img src="https://static.thenounproject.com/png/551749-200.png" width="8"> </a></li>
+                <li><a href> Pricing  <img src="https://static.thenounproject.com/png/551749-200.png" width="8"></a></li>
+                <li><a href> Resources  <img src="https://static.thenounproject.com/png/551749-200.png" width="8"></a></li>
+                <li><a href> About us  <img src="https://static.thenounproject.com/png/551749-200.png" width="8"></a></li>
+                <li><a href> <img src = "Screenshot 2026-06-19 134027.png" width=" 50px"; position: relative; top:5px></a></li>
+            </ul>
+            
+        </nav>
+        <div class="head">
+        <h1> Download <span> UltraEdit </span> for Windows</h1>
+        <img src="Screenshot 2026-06-19 145442.png" width=85px; height=70px>
+        </div>
+        <div class="info">
+        <p>Download and try UltraEdit before you buy it! This download includes the full Windows version of the text editor.</p></div>
+    </header>
+      <button class="blue-box">DOWNLOAD MC OR LINUX VERSION</button>
+
+    <div class="min">
+        <img src="Screenshot 2026-06-19 151236.png" width="60px">
+        <p><span class="min1">Download UltraEdit </span> v2026.0 (released 2026-06-09) | Latest changes </p>
+    </div>
+    <main>
+<div class="lvl1">
+<div class="lvl2"><p class="lang">English</p>
+     <div class="smallinfo">v2023.01</div>
+<div class="boxes">
+   
+    <button class="box1">Download 32-bit</button>
+    <button class="box2">Download 64-bit</button>
+    </div>
+    </div>
+<div class="lvl2"><p class="lang">Deutsch
+</p>
+     <div class="smallinfo">German</div>
+<div class="boxes">
+   
+    <button class="box1">Download 32-bit</button>
+    <button class="box2">Download 64-bit</button>
+    </div>
+    </div>
+<div class="lvl2"><p class="lang">Italiano</p>
+     <div class="smallinfo">Italian</div>
+<div class="boxes">
+   
+    <button class="box1">Download 32-bit</button>
+    <button class="box2">Download 64-bit</button>
+    </div>
+    </div>
+<div class="lvl2"><p class="lang">Español</p>
+     <div class="smallinfo">Spanish</div>
+<div class="boxes">
+   
+    <button class="box1">Download 32-bit</button>
+    <button class="box2">Download 64-bit</button>
+    </div>
+    </div>
+<div class="lvl2"><p class="lang">français</p>
+     <div class="smallinfo">French</div>
+<div class="boxes">
+   
+    <button class="box1">Download 32-bit</button>
+    <button class="box2">Download 64-bit</button>
+    </div>
+    </div>
+<div class="lvl2"><p class="lang">Português brasileiro</p>
+     <div class="smallinfo">Brazilian Portuguese</div>
+<div class="boxes">
+   
+    <button class="box1">Download 32-bit</button>
+    <button class="box2">Download 64-bit</button>
+    </div>
+    </div>
+<div class="lvl2"><p class="lang">日本語
+</p>
+     <div class="smallinfo">Japanese</div>
+<div class="boxes">
+   
+    <button class="box1">Download 32-bit</button>
+    <button class="box2">Download 64-bit</button>
+    </div>
+    </div>
+<div class="lvl2"><p class="lang">한국어</p>
+     <div class="smallinfo">Korean</div>
+<div class="boxes">
+   
+    <button class="box1">Download 32-bit</button>
+    <button class="box2">Download 64-bit</button>
+    </div>
+    </div>
+<div class="lvl2"><p class="lang">中国</p>
+     <div class="smallinfo">Chinese</div>
+<div class="boxes">
+   
+    <button class="box1">Download 32-bit</button>
+    <button class="box2">Download 64-bit</button>
+    </div>
+</div>
+
+</div>
+
+    </main>
+    <footer>
+        <footer>
+    <div class="footer">
+
+        <div class="col about">
+            <img src="Screenshot 2026-06-19 151236.png" width="80">
+
+            <h2>UltraEdit</h2>
+
+            <p>
+                UltraEdit is the powerful text editor built for developers,
+                data wranglers, and IT pros handling large files and complex tasks.
+            </p>
+
+            <div class="newsletter">
+                <h3>Newsletter Signup</h3>
+                <p>Stay updated on new features, tutorials, and exclusive offers.</p>
+
+                <div class="signup">
+                    <input type="email" placeholder="email@email.com">
+                    <button class="yellow">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h3>Company</h3>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h3>Products</h3>
+            <a href="#">UltraEdit</a>
+            <a href="#">UltraCompare</a>
+            <a href="#">UEStudio</a>
+            <a href="#">UltraFinder</a>
+            <a href="#">UltraFTP</a>
+        </div>
+
+        <div class="col">
+            <h3>Support</h3>
+            <a href="#">Help Center</a>
+            <a href="#">Documentation</a>
+            <a href="#">Forums</a>
+        </div>
+
+        <div class="col">
+            <h3>Legal</h3>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Refund Policy</a>
+            <a href="#">License Agreement</a>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © Copyright 2026, All Rights Reserved
+    </div>
+</footer>
+    </footer>
+    </body>
+</html>
